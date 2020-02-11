@@ -1,0 +1,21 @@
+server:
+  port: 8084
+  address: localhost
+
+spring:
+  application:
+    name: app_Test
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    password: Saurav2502
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  profiles:
+    active: dev
